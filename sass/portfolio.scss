@@ -1,0 +1,23 @@
+// utils
+@import './utils/variables';
+@import './utils/visually-hidden';
+//base
+@import './base/common';
+@import './base/container';
+//components
+@import './components/logo';
+@import './components/project-filter';
+@import './components/title';
+@import './components/social-links';
+@import './components/footer-form';
+@import './components/footer-submit-btn';
+
+// layout
+@import './layout/header';
+@import './layout/project-gallery';
+@import './layout/footer';
+
+.projects .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

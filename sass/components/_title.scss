@@ -1,0 +1,64 @@
+@mixin font($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  @include font(700, 36px, 1.167, 0.03em);
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 12px;
+  @include font(700, 20px, 1.15, 0.03em);
+}
+
+.hero-title {
+  text-align: center;
+  max-width: 700px;
+
+  @include font(900, 44px, 1.364, 0.06em);
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.features-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  @include font(700, 14px, 1.143, 0.03em);
+  text-transform: uppercase;
+}
+
+.whatwedo-title {
+  position: absolute;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 370px;
+  text-align: center;
+
+  @include font(700, 14px, 1.143, 0.03em);
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.project-title {
+  margin-bottom: 4px;
+
+  @include font(700, 18px, 2, 0.06em);
+  color: $main-text-color;
+}
+
+.footer-title {
+  padding-top: 12px;
+  margin-bottom: 20px;
+
+  @include font(700, 14px, 1.143, 0.03em);
+  text-transform: uppercase;
+  color: #ffffff;
+}
