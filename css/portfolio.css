@@ -71,6 +71,9 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -82,8 +85,8 @@ img {
     width: 768px;
   }
   .header .container {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 
@@ -169,6 +172,14 @@ img {
 @media screen and (min-width: 768px) {
   .mobile-menu-btn {
     display: none;
+  }
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -437,6 +448,10 @@ img {
   background-position: center;
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 @media screen and (min-width: 480px) {
   .header {
     position: relative;
@@ -495,6 +510,55 @@ img {
   .header .header-contact-item:hover, .header .header-contact-item:focus {
     color: #2196f3;
     fill: #2196f3;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header .navigation-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0;
+    margin-right: 84px;
+  }
+  .header .navigation-list-item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
+  .header .header-nav-link {
+    font-size: 14px;
+    line-height: 1.143;
+  }
+  .header .header-nav-link.current::after {
+    bottom: -32px;
+  }
+  .header .contact-items-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .header .address-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .header .header-contact-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 12px;
+    line-height: 1.167;
+  }
+  .header .icon-envelope {
+    margin-right: 8px;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */
