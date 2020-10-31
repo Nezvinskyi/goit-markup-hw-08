@@ -18,33 +18,39 @@
     <!--HEADER-->
     <header class="header">
       <div class="container">
-        <nav class="navigation">
-          <a class="logo"
-            href="./index.html"
-            lang="en"
-            aria-label="логотип вэбстудии"
-            ><span style="color: #2196f3">Web</span
-            ><span style="color: black">Studio</span>
-          </a>
-          <button type="button" class="menu-btn" data-menu-button aria-label="Переключатель мобильного меню">
-            <svg width=24 height=16>
+        <a class="logo" href="./index.html" lang="en" aria-label="логотип вэбстудии"><span
+            style="color: #2196f3">Web</span><span style="color: black">Studio</span>
+        </a>
+        <!-- <nav class="navigation"> -->
+          <button 
+            type="button" 
+            class="mobile-menu-btn" 
+            data-menu-button 
+            aria-expanded="false"
+          >
+            <svg 
+              width=24
+              height=16
+              aria-label="Переключатель мобильного меню"            
+            >
               <use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
               <use class="icon-burger" href="./images/sprite.svg#icon-burger-btn"></use>
             </svg>
           </button>
-          <ul class="navigation-list">
-            <li class="navigation-list-item">
-              <a class="header-nav-link current" href="./index.html">Студия</a>
-            </li>
-            <li class="navigation-list-item">
-              <a class="header-nav-link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="navigation-list-item">
-              <a class="header-nav-link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <address>
+          <div class="menu-container" data-menu>
+            <ul class="navigation-list">
+              <li class="navigation-list-item">
+                <a class="header-nav-link current" href="./index.html">Студия</a>
+              </li>
+              <li class="navigation-list-item">
+                <a class="header-nav-link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="navigation-list-item">
+                <a class="header-nav-link" href="">Контакты</a>
+              </li>
+            </ul>
+        
+            <address>
           <ul>
             <li class="address-item">
               <a class="header-contact-item" href="mailto:info@devstudio.com">
@@ -63,7 +69,8 @@
               >
             </li>
           </ul>
-        </address>
+            </address>
+        </div>
       </div>
     </header>
     <main>
@@ -115,7 +122,7 @@
         </div>
       </section>
       <!--What we do-->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="what-we-do-list">
@@ -148,7 +155,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--TEAM-->
       <section class="section team">
         <div class="container">

@@ -6,11 +6,14 @@
 
 @media screen and (min-width: 480px) {
   .container {
-    position: relative;
+    // position: relative;
     width: 480px;
     margin: 0 auto;
 
     .header & {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
       padding-top: 16px;
       padding-bottom: 16px;
     }
