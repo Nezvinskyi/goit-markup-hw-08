@@ -1,0 +1,40 @@
+@media screen and (max-width: 767px) {
+  .menu-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+
+    & .icon-cross {
+      display: none;
+    }
+
+    &.is-open {
+      .icon-cross {
+        display: block;
+      }
+      .icon-burger {
+        display: none;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}

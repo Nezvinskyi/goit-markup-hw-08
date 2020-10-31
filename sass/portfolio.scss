@@ -6,6 +6,7 @@
 @import './base/container';
 //components
 @import './components/logo';
+@import './components/mobile-menu';
 @import './components/project-filter';
 @import './components/title';
 @import './components/social-links';
@@ -16,8 +17,3 @@
 @import './layout/header';
 @import './layout/project-gallery';
 @import './layout/footer';
-
-.projects .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
