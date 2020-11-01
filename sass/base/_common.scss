@@ -33,6 +33,20 @@ img {
   padding-bottom: 94px;
 }
 
+@media screen and (min-width: 480px) {
+  .section.hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
 .form * {
   outline: none;
 }
