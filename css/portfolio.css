@@ -214,7 +214,10 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 25px;
+  row-gap: 15px;
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -222,13 +225,7 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 15px;
   }
-}
-
-.project-filter-item:not(:last-child) {
-  margin-right: 8px;
-  margin-bottom: 15px;
 }
 
 .projects-button {
