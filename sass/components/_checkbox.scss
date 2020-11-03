@@ -5,13 +5,18 @@
 }
 .checkbox-label {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $add-text-color;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.167;
+  }
 
   a {
     color: $accent-color;
@@ -21,7 +26,6 @@
 }
 
 .checkbox-custom-box {
-  display: inline-flex;
   width: 1em;
   height: 1em;
   background-image: url(../images/icon-check-off.svg);
@@ -29,6 +33,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
+  margin-right: 8px;
 
   .checkbox-input:checked + & {
     background-image: url(../images/icon-check-on.svg);
@@ -42,8 +47,4 @@
     border: 1px solid $accent-color;
     border-radius: 4px;
   }
-}
-
-.checkbox-text {
-  display: inline-flex;
 }

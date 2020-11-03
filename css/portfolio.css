@@ -258,6 +258,15 @@ img {
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 1199px) {
+  .form-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+  }
+}
+
 .hero-title {
   text-align: center;
   font-weight: 900;

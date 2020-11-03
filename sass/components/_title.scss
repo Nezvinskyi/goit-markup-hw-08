@@ -16,6 +16,12 @@
   @include font(700, 20px, 1.15, 0.03em);
 }
 
+@media screen and (max-width: 1199px) {
+  .form-title {
+    @include font(700, 20px, 1.5, 0.03em);
+  }
+}
+
 .hero-title {
   text-align: center;
 
