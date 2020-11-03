@@ -1002,4 +1002,24 @@ textarea.form-input {
   letter-spacing: 0.03em;
   color: #757575;
 }
+
+@media screen and (max-width: 1199px) {
+  .whatwedo {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .what-we-do-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .what-we-do-card {
+    position: relative;
+  }
+}
 /*# sourceMappingURL=main.css.map */

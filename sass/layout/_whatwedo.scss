@@ -1,8 +1,16 @@
-// .what-we-do-list {
-//   display: flex;
-//   justify-content: space-between;
-// }
+@media screen and (max-width: 1199px) {
+  .whatwedo {
+    display: none;
+  }
+}
 
-// .what-we-do-card {
-//   position: relative;
-// }
+@media screen and (min-width: 1200px) {
+  .what-we-do-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .what-we-do-card {
+    position: relative;
+  }
+}
