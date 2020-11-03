@@ -29,21 +29,28 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-@media screen and (min-width: 480px) {
-  .section.hero {
+  &.hero {
     padding-top: 118px;
     padding-bottom: 118px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .section.hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &.no-bottom-padding {
+      padding-bottom: 0;
+    }
+
+    &.hero {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
   }
 }
 

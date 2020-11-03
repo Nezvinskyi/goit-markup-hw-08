@@ -1,46 +1,60 @@
-// .no-bottom-padding {
-//   padding-bottom: 0;
-// }
+.features-list {
+  margin: -15px;
 
-// .features-list {
-//   display: flex;
-//   justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-//   &-item {
-//     width: 270px;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 
-//     &::before {
-//       display: block;
-//       content: '';
-//       height: 120px;
-//       background-color: #f5f4fa;
-//       background-repeat: no-repeat;
-//       background-position: center;
-//       border-radius: 4px;
-//     }
-//   }
-// }
+  &-item {
+    margin-right: 15px;
+    margin-left: 15px;
 
-// .icon-anthena::before {
-//   background-image: url(../images/antenna.svg);
-// }
+    @media screen and (min-width: 768px) {
+      margin: 15px;
+      width: calc((100% - 2 * 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
 
-// .icon-clock::before {
-//   background-image: url(../images/clock.svg);
-// }
+    &::before {
+      display: block;
+      content: '';
+      height: 120px;
+      background-color: #f5f4fa;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 4px;
+    }
+  }
+}
 
-// .icon-diagram::before {
-//   background-image: url(../images/diagram.svg);
-// }
+.icon-anthena::before {
+  background-image: url(../images/antenna.svg);
+}
 
-// .icon-astronaut::before {
-//   background-image: url(../images/astronaut.svg);
-// }
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
 
-// .features-description {
-//   font-weight: 400;
-//   font-size: 14px;
-//   line-height: 1.714;
-//   letter-spacing: 0.03em;
-//   color: $add-text-color;
-// }
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+
+.features-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: $add-text-color;
+}

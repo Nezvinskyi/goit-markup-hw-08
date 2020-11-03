@@ -45,18 +45,23 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-@media screen and (min-width: 480px) {
-  .section.hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
+.section.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 
 @media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .section.no-bottom-padding {
+    padding-bottom: 0;
+  }
   .section.hero {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -189,6 +194,12 @@ img {
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .features-title {
+    text-align: center;
+  }
 }
 
 .whatwedo-title {
@@ -914,5 +925,81 @@ textarea.form-input {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.features-list {
+  margin: -15px;
+}
+
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.features-list-item {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .features-list-item {
+    margin: 15px;
+    width: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list-item {
+    width: 270px;
+  }
+}
+
+.features-list-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.icon-anthena::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+
+.features-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 /*# sourceMappingURL=main.css.map */

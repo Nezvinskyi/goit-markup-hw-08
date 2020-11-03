@@ -45,18 +45,23 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-@media screen and (min-width: 480px) {
-  .section.hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
+.section.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 
 @media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .section.no-bottom-padding {
+    padding-bottom: 0;
+  }
   .section.hero {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -294,6 +299,12 @@ img {
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .features-title {
+    text-align: center;
+  }
 }
 
 .whatwedo-title {
