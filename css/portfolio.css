@@ -212,14 +212,23 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
-.project-filter-item + .project-filter-item {
-  margin-left: 8px;
+@media screen and (min-width: 768px) {
+  .project-filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 15px;
+  }
+}
+
+.project-filter-item:not(:last-child) {
+  margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .projects-button {
