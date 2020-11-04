@@ -182,6 +182,7 @@ img {
     position: absolute;
     top: 100%;
     left: 0;
+    z-index: 999;
     width: 100%;
     background-color: #ffffff;
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -661,7 +662,6 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: -15px;
-  outline: 1px dashed blue;
 }
 
 .project-container {
@@ -669,7 +669,6 @@ img {
   width: 450px;
   margin: 15px;
   background: #ffffff;
-  outline: 1px dotted red;
 }
 
 @media screen and (min-width: 768px) {
