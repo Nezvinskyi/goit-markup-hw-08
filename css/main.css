@@ -977,9 +977,14 @@ textarea.form-input {
   }
 }
 
-.features-list-item {
-  margin-right: 15px;
-  margin-left: 15px;
+@media screen and (max-width: 767px) {
+  .features-list-item {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .features-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {

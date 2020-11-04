@@ -12,8 +12,14 @@
   }
 
   &-item {
-    margin-right: 15px;
-    margin-left: 15px;
+    @media screen and (max-width: 767px) {
+      margin-right: 15px;
+      margin-left: 15px;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
 
     @media screen and (min-width: 768px) {
       margin: 15px;
